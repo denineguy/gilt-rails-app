@@ -15,6 +15,9 @@ Bundler.require(*Rails.groups)
 
 module GiltRailsApp
   class Application < Rails::Application
+
+    I18n.enforce_available_locales = true 
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
