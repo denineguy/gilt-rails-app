@@ -40,12 +40,27 @@
   }
 }
 
-.alert-success{
+.alert-notice{
   background-color: #89EA8C;
   color: #006603;
+}
+
+.alert-error{
+  background-color: #FFD2D0;
+  color: #C60600;
 }
 
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+  padding: 2px;
+  display: table;
+}
+
+#notice {
+  color: green;
+}
+
+#error {
+  color: red;
 }
