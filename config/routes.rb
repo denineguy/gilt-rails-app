@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-
-  
+  # root 'static_pages#home'
+  root 'users#index'
   #this is our restful routes
   resources :users 
   resources :sessions, only: [:new, :create, :destroy] 

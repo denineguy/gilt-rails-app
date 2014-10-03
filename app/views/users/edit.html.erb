@@ -1,7 +1,8 @@
-<% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
-<div>
-  <div>
+<% provide(:title, 'Edit User') %>
+<h1>Update your profile</h1>
+
+<div class="row">
+  <div class="span6 offset3">
     <%= form_for(@user) do |f| %>
       <% if @user.errors.any? %>
         <div id="error_explanation">
@@ -31,7 +32,7 @@
       </p>
 
       <p>
-        <%= f.label :password_confirmation,"Confirm Password:" %></br>
+        <%= f.label :password_confirmation, "Confirm Password:" %></br>
         <%= f.password_field :password_confirmation %></br>
       </p>
 
@@ -42,7 +43,8 @@
                                 '14', '14.5', '15' ], :prompt => 'Select One' %></br>
       </p>
 
-      <p><%= f.submit "Create my account" %></p>
+      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
     <% end %>
+
   </div>
 </div>
