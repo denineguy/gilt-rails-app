@@ -76,7 +76,7 @@ describe "User pages" do
         fill_in "Username",         with: new_username
         fill_in "Email",            with: new_email
         fill_in "Password",         with: user.password
-        fill_in "Confirm password"  with: user.password
+        fill_in "Confirm password",  with: user.password
         click_button "Save changes"
       end
 
