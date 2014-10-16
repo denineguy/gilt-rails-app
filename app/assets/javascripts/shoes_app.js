@@ -59,7 +59,6 @@ $(document).ready(function(){
                                   "<li class='msrp'><s>" + product_msrp + "</s></li></ul></div></div>");
             $('.products-container, h6').fadeIn(3000);
 
-            
           }
           
           $('.buy-container').hide();
