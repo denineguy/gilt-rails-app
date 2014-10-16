@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require 'reset'
  *= require_tree .
  *= require_self
  //= depend_on_asset "bootstrap/glyphicons-halflings-regular.eot"
@@ -19,10 +20,7 @@
  */
 @import "bootstrap";
 /* Some Style from the Bootstrap Default Theme */
-body {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
+
 
 .theme-dropdown .dropdown-menu {
   position: static;
@@ -32,4 +30,9 @@ body {
 
 .theme-showcase > p > .btn {
   margin: 5px 0;
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
 }

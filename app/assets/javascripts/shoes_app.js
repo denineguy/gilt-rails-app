@@ -49,7 +49,7 @@ $(document).ready(function(){
             }
             
      
-            $('.products-container').append("<div class='container'><div class='image-container'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></div>" +
+            $('.products-container').append("<div class='feed-container'><div class='image-container'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></div>" +
                                   "<div class='buy-container'><a href=" + product_url + " target='_blank'><button class='button'>Buy</button></a></div>" +
                                   "<div class='product-info'><ul><li>"+ brand_name +"</li>" +
                                   "<li class='product-name'>" + product_name + "</li>" + 
@@ -63,7 +63,7 @@ $(document).ready(function(){
           
           $('.buy-container').hide();
          
-          $('.container').hover(function(){
+          $('.feed-container').hover(function(){
             $(this).find('.buy-container').slideToggle(200);
           });
 

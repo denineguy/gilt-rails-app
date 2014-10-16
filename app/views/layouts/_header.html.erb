@@ -1,11 +1,14 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "sample app", root_path, id: "logo" %>
+      <p><%= link_to "Shopping Obsession", root_path, id: "logo" %></p>
+      <!-- <p><%#= link_to "Browse Product Just For You", root_path, id: "logo" %></p> -->
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home", current_user %></li>
-          <li><%#= link_to "Help", help_path %></li>
+          <li><%= link_to "About", "#"%></li>
+          <li><%= link_to "My Feed", '#' %></li>
+          <li><%= link_to "All Women's", "#" %></li>
           <% if signed_in? %>
             <!-- <li><%#= link_to "Users", "#" %></li> -->
             <li id="fat-menu" class="dropdown">

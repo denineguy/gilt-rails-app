@@ -18,28 +18,16 @@
   <!-- <link rel="icon" type="image/jpg" href="favicon.jpg" /> -->
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="js/product.js"></script>
-  <script src="js/shoes_app.js"></script>
+  <!--<script src="js/product.js"></script>
+  <script src="js/shoes_app.js"></script> -->
 
   <!-- <script src="js/dresses_app.js"></script> -->
 </head>
 <body>
 <%= javascript_tag "var userId = #{@user.id};" %>
 <%#= javascript_tag "var userShoeSize = #{@user.shoe_size};" %>
-  <nav>
-    <div class="wrapper-head">
-      <h3>My Shopping Obsession</h3>
-      <h5>Curated Product from Gilt Fit Just for You</h5>
-    </div>
-  </nav>
   <div class="products-container wrapper">
       <!-- <ul class="products-container"></ul>  -->
   </div>
-  <footer>
-    <div class="wrapper-head">
-      <h6>Built by <a href="http://twitter.com/sashaydoll" target="_blank">Denine Guy</a> using the Gilt Groupe API</h6>
-      <h6>(no affiliation with <a href="http://gilt.com" target="_blank">Gilt Groupe</a>)</h6>
-    </div>
-  </footer>
 </body>
 </html>
