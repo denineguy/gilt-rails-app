@@ -3,21 +3,17 @@
 <head>
   <title>GiltRailsApp</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  
   <%= csrf_meta_tags %>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudfare.com/ajax/libs/html5shiv/r29/html5.min.js">
-    </script>
-  <![endif]-->   
-  <%= analytics_init if Rails.env.production? %>
   <meta charset=utf-8>
   <meta name="keywords" content="fashion"/>
   <meta name="description" content="My Shopping Obsession">
   <title>My Shopping Obsession</title>
-  <link href="css/reset.css" rel="stylesheet" type="text/css">
   <!-- <link rel="icon" type="image/jpg" href="favicon.jpg" /> -->
-  
-  
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudfare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    </script>
+  <![endif]-->   
+  <%= analytics_init if Rails.env.production? %>  
 </head>
 <body>
   <%= render 'layouts/header' %>
@@ -33,6 +29,6 @@
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <%= javascript_include_tag 'application' %>
-  <%= javascript_include_tag 'shoes_app' %>
+  <%#= javascript_include_tag 'shoes_app' %>
 </body>
 </html>
