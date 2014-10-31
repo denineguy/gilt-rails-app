@@ -1,0 +1,1 @@
+KEY = ENV['GILT_API_KEY']

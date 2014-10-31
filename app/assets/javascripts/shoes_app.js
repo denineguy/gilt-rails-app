@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $.ajax({
-    url: '/users/'+userId,
+    // url: '/users/'+userId,
     type: 'GET',
     dataType: 'json',
     success: function(response){
@@ -9,7 +9,7 @@ $(document).ready(function(){
       console.log(response.shoe_size);
       var userShoeSize = response.shoe_size;
     
-      $('#products, h6').hide();
+      // $('#products, h6').hide();
       var apikey = 'df180f455f59f4441b26c77d27a8727e',
           URL = 'https://api.gilt.com/v1/products?q=shoes&store=women&size=WoSh%3A'+ userShoeSize +'&apikey=df180f455f59f4441b26c77d27a8727e';
            // URL = 'https://api.gilt.com/v1/sales/women/active.json?apikey=df180f455f59f4441b26c77d27a8727e';

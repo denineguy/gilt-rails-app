@@ -1,16 +1,18 @@
 
 <%= provide(:title, @user.username) %>
-<div class = "row">
-  <aside class="span4">
-    <section>
-      <h1><%= @user.username %></h1>
-      
-    </section>
-  </aside>
-</div>
+<div class="wrapper">
+  <div class = "row">
+    <aside class="span4">
+      <section>
+        <h1><%= @user.username %></h1>
+        
+      </section>
+    </aside>
+  </div>
 
-<%#= javascript_tag "var userShoeSize = #{@user.shoe_size};" %>
-<div class="products-container wrapper">
-    <!-- <ul class="products-container"></ul>  -->
+  <%#= javascript_tag "var userShoeSize = #{@user.shoe_size};" %>
+  <div class="products-container wrapper">
+      <!-- <ul class="products-container"></ul>  -->
+  </div>
 </div>
 <%= javascript_tag "var userId = #{@user.id};" %>

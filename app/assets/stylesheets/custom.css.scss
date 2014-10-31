@@ -1,4 +1,4 @@
-@import "bootstrap";
+// @import "bootstrap";
 
 @mixin box_sizing {
   box-sizing: border-box;         /* Opera/IE 8+ */ 
@@ -79,7 +79,7 @@ nav {
 }
 
 .wrapper-head {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
   // background-color: teal;
   border: 1px solid black;
@@ -101,6 +101,10 @@ nav {
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 
+}
+
+.container{
+  width: 100%;
 }
 
 /*create wrapper inside nav and make it 1200px*/
@@ -145,6 +149,7 @@ nav ul li{
   width: 32.33%; 
   // border: 1px solid blue;  //get rid of this border
   margin: .5%;
+  overflow: hidden;
 }
 
 
@@ -258,6 +263,35 @@ footer {
   overflow: hidden;
   background-color: black;
   color: white;
+  position:absolute;
+  left:0;
 }
 
+
+/************************************************************************************************/
+/*****************************************  home page ****************************************/
+/************************************************************************************************/
+.home-page-hero{
+  min-height: 100%;
+}
+
+#welcome-page{
+  width: 100%;
+  // border: 1px solid blue;
+  padding-top: 50px;
+}
+
+.hero-image-container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ddd9d9;
+  background-color: #FFFFFF;
+}
+
+.hero_info {
+  height: 700px;
+  width: 100%; 
+  margin: 0 auto;
+}
 // /*create wrapper inside footer and make it 1200px*/

@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
-  get 'static_pages/about'
-
-  # root 'static_pages#home'
-  root 'users#show'
+  root 'static_pages#home'
+  # root 'users#show'
   #this is our restful routes
   resources :users 
   resources :sessions, only: [:new, :create, :destroy] 
 
+  #static pages
+  get '/about' =>'static_pages#about'
 
   get '/signup' => 'users#new'
   get '/signin' => 'sessions#new'

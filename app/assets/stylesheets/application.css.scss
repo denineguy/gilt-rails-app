@@ -10,7 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require 'reset'
+ *= require reset
  *= require_tree .
  *= require_self
  //= depend_on_asset "bootstrap/glyphicons-halflings-regular.eot"
@@ -33,6 +33,15 @@
 }
 
 body {
-  padding-top: 70px;
   padding-bottom: 30px;
+}
+
+.container {
+  width: 100%;
+  padding: 0%;
+}
+
+.row {
+  margin: 0px;
+  padding-top: 70px;
 }
