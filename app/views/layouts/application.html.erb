@@ -24,7 +24,7 @@
       <div class="alert alert-<%= key %>"><%=value%></div>
     <% end %>
     <%= yield %>
-   <%= debug(params) if Rails.env.development? %> 
+    <%#= debug(params) if Rails.env.development? %> 
   </div>
   <%= render 'layouts/footer' %>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
