@@ -43,6 +43,22 @@
                                 '14', '14.5', '15' ], :prompt => 'Select One' %></br>
       </p>
 
+      <!-- TODO: figure out what I want to group together and then make sure I add those fields to the model -->
+      <p>
+        <%= f.label :dress_size %>:</br>
+        <%= f.select :dress_size, [ '4', '4.5', '5', '5.5', '6', '6.5', '7', '7.5', '8', '8.5', '9',
+                                '9.5', '10', '10.5', '11', '11.5', '12', '12.5', '13', '13.5', 
+                                '14', '14.5', '15' ], :prompt => 'Select One' %></br>
+      </p>
+
+      <p>
+        <%= f.label :top_size %>:</br>
+        <%= f.select :top_size, [ '4', '4.5', '5', '5.5', '6', '6.5', '7', '7.5', '8', '8.5', '9',
+                                '9.5', '10', '10.5', '11', '11.5', '12', '12.5', '13', '13.5', 
+                                '14', '14.5', '15' ], :prompt => 'Select One' %></br>
+      </p>
+
+
       <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
     <% end %>
 

@@ -6,13 +6,13 @@ $(document).ready(function(){
     dataType: 'json',
     success: function(response){
       console.log("show success"+userId);
-      console.log(response.dress_size);
-      var userDressSize = response.dress_size;
+      console.log(response.tops_size);
+      var userTopSize = response.tops_size;
     
       // $('#products, h6').hide();
       var apikey = 'df180f455f59f4441b26c77d27a8727e',
-          URL = 'https://api.gilt.com/v1/products?q=dresses&store=women&size=WoAp%3A'+ 8 +'&apikey=df180f455f59f4441b26c77d27a8727e';
-           // URL = 'https://api.gilt.com/v1/sales/women/active.json?apikey=df180f455f59f4441b26c77d27a8727e';
+          URL = 'https://api.gilt.com/v1/products?q=tops&store=women&size=WoAp%3A'+ userDressSize +'&apikey=df180f455f59f4441b26c77d27a8727e';
+         
       $.ajax({
         url: URL,
         type: 'GET',
@@ -49,7 +49,7 @@ $(document).ready(function(){
             }
             
      
-            $('.dress-container').append("<div class='feed-container'><div class='image-container'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></div>" +
+            $('.top-container').append("<div class='feed-container'><div class='image-container'><div class='sale_info' style='background-image:url(" + image + ");background-size:cover'></div></div>" +
                                   "<div class='buy-container'><a href=" + product_url + " target='_blank'><button class='button'>Buy</button></a></div>" +
                                   "<div class='product-info'><ul><li>"+ brand_name +"</li>" +
                                   "<li class='product-name'>" + product_name + "</li>" + 
@@ -57,7 +57,7 @@ $(document).ready(function(){
                                   "<li>" + name_size+ ": " + size + "</li>" +
                                   "<li class='price'>" + product_price + "</li>" +
                                   "<li class='msrp'><s>" + product_msrp + "</s></li></ul></div></div>");
-            $('.dress-container, h6').fadeIn(3000);
+            $('.top-container, h6').fadeIn(3000);
 
           }
           
@@ -76,4 +76,3 @@ $(document).ready(function(){
   });
 
 });
-
