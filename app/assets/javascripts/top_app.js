@@ -5,20 +5,20 @@ $(document).ready(function(){
     type: 'GET',
     dataType: 'json',
     success: function(response){
-      console.log("show success"+userId);
-      console.log(response.tops_size);
-      var userTopSize = response.tops_size;
+      // console.log("show success"+userId);
+      // console.log("tops: " + response.top_size);
+      var userTopSize = response.top_size;
     
       // $('#products, h6').hide();
       var apikey = 'df180f455f59f4441b26c77d27a8727e',
-          URL = 'https://api.gilt.com/v1/products?q=tops&store=women&size=WoAp%3A'+ userDressSize +'&apikey=df180f455f59f4441b26c77d27a8727e';
+          URL = 'https://api.gilt.com/v1/products?q=shirts&store=women&size=WoAp3A'+ userTopSize +'&apikey=df180f455f59f4441b26c77d27a8727e';
          
       $.ajax({
         url: URL,
         type: 'GET',
         dataType: 'json',
         success: function (response){
-          console.log("Gilt API Successful");
+          // console.log("Gilt API Successful");
 
           for (var i = 0; i < response.products.length; i++) {
             var product_name = response.products[i].name;
@@ -69,7 +69,7 @@ $(document).ready(function(){
 
         },
         error: function(response){
-          console.log("Gilt Failed")
+          // console.log("Gilt Failed")
         }
       }); 
      }

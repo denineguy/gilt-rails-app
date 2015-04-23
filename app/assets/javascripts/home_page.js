@@ -8,7 +8,7 @@ $(document).ready(function(){
     dataType: 'json',
     success: function(response){
       console.log("Gilt API Successful");
-      console.log(response.sales);
+      // console.log(response.sales);
       var imageArray = [];
       var responseLength = response.sales.length;
 
@@ -41,7 +41,7 @@ $(document).ready(function(){
       });
     },
     error: function(response){
-      console.log("Gilt Failed")
+      // console.log("Gilt Failed")
     } 
 
   });
